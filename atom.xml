@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://rain2pku.github.com/atom.xml" rel="self"/>
   <link href="http://rain2pku.github.com/"/>
-  <updated>2012-11-03T14:24:18+08:00</updated>
+  <updated>2012-11-03T14:42:03+08:00</updated>
   <id>http://rain2pku.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,23 @@
     <link href="http://rain2pku.github.com/blog/2012/11/02/hello/"/>
     <updated>2012-11-02T20:07:00+08:00</updated>
     <id>http://rain2pku.github.com/blog/2012/11/02/hello</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<h1>test for octopress</h1>
+
+<h1>I can write blog</h1>
+
+<h1>生命是如此的精彩</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[python]
+</span><span class='line'>print 'hello world\n'
+</span><span class='line'>lambda x: x^2
+</span><span class='line'>for i in range(10):
+</span><span class='line'>    print i * 2</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   

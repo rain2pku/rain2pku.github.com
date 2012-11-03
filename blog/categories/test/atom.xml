@@ -4,7 +4,7 @@
   <title><![CDATA[Category: test | My Octopress Blog]]></title>
   <link href="http://rain2pku.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://rain2pku.github.com/"/>
-  <updated>2012-11-03T15:35:23+08:00</updated>
+  <updated>2012-11-03T15:36:25+08:00</updated>
   <id>http://rain2pku.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -42,7 +42,7 @@ for i in range(10):</p>
     <link href="http://rain2pku.github.com/blog/2012/11/02/hello-world/"/>
     <updated>2012-11-02T19:40:00+08:00</updated>
     <id>http://rain2pku.github.com/blog/2012/11/02/hello-world</id>
-    <content type="html"><![CDATA[<p>File /home/zcy/hack/octopress/source/downloads/code/code/lotto.py could not be found</p>
+    <content type="html"><![CDATA[<p>File /home/zcy/hack/octopress/source/downloads/code/lotto.py could not be found</p>
 
 <h2>haha</h2>
 ]]></content>

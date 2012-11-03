@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://rain2pku.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: test | My Octopress Blog]]></title>
+  <link href="http://rain2pku.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://rain2pku.github.com/"/>
   <updated>2012-11-03T15:32:06+08:00</updated>
   <id>http://rain2pku.github.com/</id>
@@ -24,17 +24,16 @@
 
 <h1>生命是如此的精彩</h1>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>[python]
-</span><span class='line'>print 'hello world\n'
-</span><span class='line'>lambda x: x^2
-</span><span class='line'>for i in range(10):
-</span><span class='line'>    print i * 2</span></code></pre></td></tr></table></div></figure>
+<p>```
+[python]
+print 'hello world\n'
+lambda x: x<sup>2</sup>
+for i in range(10):</p>
 
+<pre><code>print i * 2
+</code></pre>
+
+<p>```</p>
 ]]></content>
   </entry>
   

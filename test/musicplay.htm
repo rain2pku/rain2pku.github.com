@@ -1,0 +1,123 @@
+<<header("AIMA Python file: musicplay.py")>><pre><font color="cc33cc">#!/usr/local/bin/env python</font>
+<font color="cc33cc"># -*- coding: utf-8 -*-</font>
+
+from Tkinter import *
+import mp3play
+import tkFileDialog
+import Tkinter
+import tkFont
+import Tkinter as tk
+
+<b>class </b><b style="background-color:ffff00"><a name="musicplay">musicplay</b>:
+    <b>def </b><b style="background-color:ffff00"><a name="__init__">__init__</b>(self):
+        self.music = None
+        self.play_list = []
+        self.trackLocations = []
+
+        self.root = tk.Tk()
+        self.root.title(<i><font color="green">"EmoPlayer"</font></i>)
+
+        self.root.configure(background=<i><font color="green">'black'</font></i>)
+        self.root.geometry(<i><font color="green">'300x100+750+300'</font></i>)
+
+        self.filename = Tkinter.StringVar()
+        self.name = Tkinter.StringVar()
+        self.play_list = Tkinter.StringVar()
+
+        menubar = Menu(self.root)
+        filemenu = Menu(menubar, tearoff=0, bg=<i><font color="green">"black"</font></i>, fg=<i><font color="green">"Orange"</font></i>)
+        menubar.add_cascade(label=<i><font color="green">'File'</font></i>, menu = filemenu)
+        filemenu.add_command(label=<i><font color="green">'Open'</font></i>, command = self.open_file)
+        filemenu.add_separator()
+        filemenu.add_command(label=<i><font color="green">'Exit'</font></i>, command = self.Exit)
+        self.root.config(menu=menubar)
+
+        open_file = Button(self.root, width = 6, height = 1,
+                           text = <i><font color="green">'Mood'</font></i>,fg=<i><font color="green">'Orange'</font></i>, bg=<i><font color="green">'black'</font></i>)
+        open_file.grid(row=0, column=3)
+
+        play_button = Button(self.root, width = 5, height = 1, text=<i><font color="green">'Play'</font></i>,
+                             fg=<i><font color="green">'Orange'</font></i>, command = self.play, bg=<i><font color="green">"black"</font></i>)
+        play_button.grid(row=0, column=0, sticky = W)
+
+        stop_button = Button(self.root, width = 5, height = 1, text=<i><font color="green">'Stop'</font></i>,
+                             fg=<i><font color="green">'Orange'</font></i>, command = self.stop, bg=<i><font color="green">"black"</font></i>)
+        stop_button.grid(row=0, column=1, sticky = W)
+
+        pause_button = Button(self.root, width = 5, height = 1, text=<i><font color="green">'Pause'</font></i>,
+                              fg=<i><font color="green">'Orange'</font></i>, command = self.pause, bg=<i><font color="green">"black"</font></i>)
+        pause_button.grid(row=0, column=2)
+
+        self.volume_slider = Scale(self.root, label=<i><font color="green">'Volume'</font></i>,
+                              orient = <i><font color="green">'horizontal'</font></i>, fg = <i><font color="green">'Orange'</font></i>,
+                              command = self.vol, bg=<i><font color="green">"black"</font></i>)
+        self.volume_slider.grid(row=0, column=4)
+
+        file_name_label = Label(self.root, font=(<i><font color="green">'Comic Sans'</font></i>, 8),
+                                fg = <i><font color="green">'Orange'</font></i>, wraplength = 300,
+                                textvariable=self.name, bg=<i><font color="green">"black"</font></i>)
+        file_name_label.grid(row=3, column=0, columnspan=8)
+
+        play_list_window = Toplevel(self.root, height = 150, width = 100)
+        play_list_window.title(<i><font color="green">"Playlist"</font></i>)
+        self.play_list_display = Listbox(play_list_window, selectmode=EXTENDED,
+                                    width = 50, bg=<i><font color="green">"Dark Slate grey"</font></i>,
+                                    fg=<i><font color="green">"Orange"</font></i>)
+        self.play_list_display.bind(<i><font color="green">"&lt;Double-Button-1&gt;"</font></i>, self.tune_changed)
+        self.play_list_display.pack()
+        play_list_window.mainloop()
+
+        self.root.mainloop()
+
+    <b>def </b><b style="background-color:ffff00"><a name="open_file">open_file</b>(self):
+        <i><font color="green">""</font></i><i><font color="green">"
+        Opens a dialog box to open .mp3 filemusic,
+        then sends filename to file_name_label.
+        "</font></i><i><font color="green">""</font></i>
+        self.filename.set(tkFileDialog.askopenfilename(
+            defaultextension = <i><font color="green">".mp3"</font></i>,
+            filetypes=[(<i><font color="green">"All Types"</font></i>, <i><font color="green">".*"</font></i>), (<i><font color="green">"MP3"</font></i>, <i><font color="green">".mp3"</font></i>)]))
+        self.playlist = self.filename.get()
+        playlist_pieces = self.playlist.split(<i><font color="green">"/"</font></i>)
+        self.play_list.set (playlist_pieces[-1])
+        playl = self.play_list.get()
+        self.play_list_display.insert(END, playl)
+        print self.filename.get()
+        self.music = mp3play.load(self.filename.get())
+        pieces = self.filename.get().split(<i><font color="green">"/"</font></i>)
+        self.trackLocations += [self.filename.get()]
+        self.name.set(pieces[-1])
+
+    <b>def </b><b style="background-color:ffff00"><a name="play">play</b>(self):
+        <i><font color="green">""</font></i><i><font color="green">"Plays the .mp3 file"</font></i><i><font color="green">""</font></i>
+        self.music.play()
+
+    <b>def </b><b style="background-color:ffff00"><a name="stop">stop</b>(self):
+        <i><font color="green">""</font></i><i><font color="green">"Stops the .mp3 file"</font></i><i><font color="green">""</font></i>
+        self.music.stop()
+
+    <b>def </b><b style="background-color:ffff00"><a name="pause">pause</b>(self):
+        <i><font color="green">""</font></i><i><font color="green">"Pauses or unpauses the .mp3 file"</font></i><i><font color="green">""</font></i>
+        if self.music.ispaused():
+            self.music.unpause()
+        else:
+            self.music.pause()
+
+    <b>def </b><b style="background-color:ffff00"><a name="vol">vol</b>(self, event):
+        <i><font color="green">""</font></i><i><font color="green">"Allows volume to be changed with the slider"</font></i><i><font color="green">""</font></i>
+        v = Scale.get(self.volume_slider)
+        try:
+            self.music.volume(v)
+        except:
+            pass
+
+    <b>def </b><b style="background-color:ffff00"><a name="tune_changed">tune_changed</b>(self, event):
+        idx = event.widget.curselection()[0]
+        self.music = mp3play.load(self.trackLocations[int(idx)])
+        print (<i><font color="green">"Now playing %s"</font></i> % event.widget.get(idx))
+
+    <b>def </b><b style="background-color:ffff00"><a name="Exit">Exit</b>(self):
+        exit()
+
+if __name__ == <i><font color="green">"__main__"</font></i>:
+    musicplay()</pre><<footer>>

@@ -4,7 +4,7 @@
   <title><![CDATA[曾哥笔记]]></title>
   <link href="http://rain2pku.github.com/atom.xml" rel="self"/>
   <link href="http://rain2pku.github.com/"/>
-  <updated>2012-11-03T23:17:24+08:00</updated>
+  <updated>2012-11-04T04:19:30+08:00</updated>
   <id>http://rain2pku.github.com/</id>
   <author>
     <name><![CDATA[Rain]]></name>
@@ -25,6 +25,9 @@
 <p>Octopress的优点</p>
 
 <p>纯静态: 最终发布的只有HTML, Javascript和CSS</p>
+
+<!-- more -->
+
 
 <p>Markdown: 使用Markdown作为源文件语言, 易写易读</p>
 

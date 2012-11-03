@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://rain2pku.github.com/atom.xml" rel="self"/>
   <link href="http://rain2pku.github.com/"/>
-  <updated>2012-11-03T15:43:51+08:00</updated>
+  <updated>2012-11-03T16:25:59+08:00</updated>
   <id>http://rain2pku.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,12 @@
     <link href="http://rain2pku.github.com/blog/2012/11/02/hello/"/>
     <updated>2012-11-02T20:07:00+08:00</updated>
     <id>http://rain2pku.github.com/blog/2012/11/02/hello</id>
-    <content type="html"><![CDATA[<h1>test for octopress</h1>
+    <content type="html"><![CDATA[<p style="color:green">
+Hello World!
+</p>
+
+
+<h1>test for octopress</h1>
 
 <h1>I can write blog</h1>
 

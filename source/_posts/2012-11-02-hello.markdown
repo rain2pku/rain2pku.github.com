@@ -3,5 +3,18 @@ layout: post
 title: "hello"
 date: 2012-11-02 20:07
 comments: true
-categories: 
+categories: [test]
 ---
+
+
+# test for octopress
+# I can write blog
+# 生命是如此的精彩
+
+```
+[python]
+print 'hello world\n'
+lambda x: x^2
+for i in range(10):
+    print i * 2
+```

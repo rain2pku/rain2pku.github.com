@@ -4,7 +4,7 @@
   <title><![CDATA[Category: test | ]]></title>
   <link href="http://rain2pku.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://rain2pku.github.com/"/>
-  <updated>2012-11-05T17:30:56+08:00</updated>
+  <updated>2012-11-05T18:13:49+08:00</updated>
   <id>http://rain2pku.github.com/</id>
   <author>
     <name><![CDATA[Rain]]></name>
@@ -12,35 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[hello]]></title>
-    <link href="http://rain2pku.github.com/blog/2012/11/02/hello/"/>
-    <updated>2012-11-02T20:07:00+08:00</updated>
-    <id>http://rain2pku.github.com/blog/2012/11/02/hello</id>
-    <content type="html"><![CDATA[<p style="color:green">
-Hello World!
-</p>
-
-
-<h1>test for octopress</h1>
-
-<h1>I can write blog</h1>
-
-<h1>生命是如此的精彩</h1>
-
-<p>```
-[python]
-print 'hello world\n'
-lambda x: x<sup>2</sup>
-for i in range(10):</p>
-
-<pre><code>print i * 2
-</code></pre>
-
-<p>```</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>

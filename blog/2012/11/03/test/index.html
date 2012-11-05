@@ -34,7 +34,7 @@
 
 </head>
 
-<body  >
+<body   class="no-sidebar" >
   <header role="banner"><hgroup>
   <div id="logo" style="display:none">
   	<div id="logoLeft">{</div>
@@ -189,68 +189,6 @@
 </article>
 
 </div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2012/11/03/test/">test</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/11/03/hahaha/">hahaha</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/11/02/hello/">hello</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/11/02/hello-world/">hello world</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/rain2pku">@rain2pku</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'rain2pku',
-            count: 1,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
-
-  
-</aside>
 
 
     </div>

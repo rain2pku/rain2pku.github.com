@@ -9,12 +9,7 @@
   <meta name="author" content="Rain">
 
   
-  <meta name="description" content="Chuck Jazdzewski：Borland公司首席架构师
-* Never stop learning
-* Communication is critical
-* Under promise, over deliver
-* I was wrong
-* If it is not tested &hellip;">
+  <meta name="description" content="想架个博客好久了，经过调研最后还是选择了相对比较流行稳定简单的octopress，当然另外一个非常重要的原因是它可以用github托管，无需自己搞服务器和域名，这对于一个仅仅是想写点东西的我来说，吸引力还是挺大的。 虽说它比较简单，但对于不懂js、css、html、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -23,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rain2pku.github.com/">
+  <link rel="canonical" href="http://rain2pku.github.com/blog/page/3/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +79,7 @@
   <header>
     
       <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/12/11/ju-ren-de-jian-bang/">巨人的肩膀</a></h1>
+        <h1 class="entry-title"><a href="/blog/2012/11/06/road-to-octopress/">Road to Octopress</a></h1>
       
     
     
@@ -101,66 +96,29 @@
   
 
 
-<time datetime="2012-12-11T00:23:00+08:00" pubdate data-updated="true">2012-12-11</time>
+<time datetime="2012-11-06T23:09:00+08:00" pubdate data-updated="true">2012-11-06</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Chuck Jazdzewski：Borland公司首席架构师
-* Never stop learning
-* Communication is critical
-* Under promise, over deliver
-* I was wrong
-* If it is not tested it doesn&#8217;t work
-* Programming isn&#8217;t your job, shipping is
-总结为“做个靠谱的程序员”</p>
-</div>
-  
-  
+  <div class="entry-content"><p>想架个博客好久了，经过调研最后还是选择了相对比较流行稳定简单的octopress，当然另外一个非常重要的原因是它可以用github托管，无需自己搞服务器和域名，这对于一个仅仅是想写点东西的我来说，吸引力还是挺大的。</p>
 
+<p>虽说它比较简单，但对于不懂js、css、html、ruby的前端小白来说还是折腾了挺久的，在这里把它记录下来，一方面加深理解，另一方面希望也能为像我这样的人提供点帮助。</p>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/12/06/wo-de-jia/">我的家</a></h1>
-      
-    
-    
-      <p class="meta">
-        
+<p>虽然octopress的文档写的比较简单，但是折腾这个博客的大部分的问题都能在这里找到答案，所以如果你细心耐心并且用心的看了它的<a href="http://octopress.org/docs/setup/" target="_blank">文档</a>,你也许就不会搜到这里来了。</p>
 
+<p>首先安装git，并且建立一个<a href="https://github.com" target="_blank">github账号</a>（如果你把博客系统搭建在你的服务器上，那么这个账号可以不用），然后在github上创建一个仓库，<style color="red">注意仓库名必须是在你的github账号上扩张的。假如你的github账号为abcd,则你所建的仓库必须为abcd.github.com</style>。</p>
 
+<p>然后在你的终端上的ssh与你的<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">github账号绑定</a></p>
 
+<p>然后安装ruby，建议用<a href="http://octopress.org/docs/setup/rvm/" target="_blank">RVM</a>来安装，方便快捷，后续也不会出什么差错。</p>
 
+<p>然后<a href="http://octopress.org/docs/setup/" target="_blank"安装octopress</a>,在<code>rake install</code>安装完默认主题之后，再<code>rake setup_github_pages</code> 建立github pages，它会提示让输入仓库的url，则如果你的账号是abcd时，你输入： <code>git@github.com:abcd/abcd.github.com</code> 然后再 <code>rake generate &amp;&amp; rake deploy</code>就产生博客页面，延迟几分钟就可以看了&#8230;</p>
 
-
-
-
-  
-
-
-<time datetime="2012-12-06T10:02:00+08:00" pubdate data-updated="true">2012-12-06</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>对于mac我需要的软件有：
-* XBMC （用于看电影）
-* evernote （用于做笔记）
-* dropbox  （用于云存储）
-* sogou输入法
-* xcode
-* emacs
-*</p>
+<p>接下来就可以 <code>rake new_post["test"]</code>生成<a href="http://octopress.org/docs/blogging/" target="_blank">写博客</a>了。注意生成的文件在 <code>source/_post/</code>目录下。
+goodluck :)</p>
 </div>
   
   
@@ -170,9 +128,9 @@
   
   <div class="pagination">
     
-      <a class="prev" href="/blog/page/2/">&larr; 旧文</a>
-    
     <a href="/blog/archives">文章存档</a>
+    
+    <a class="next" href="/blog/page/2/">新作 &rarr;</a>
     
   </div>
 </div>

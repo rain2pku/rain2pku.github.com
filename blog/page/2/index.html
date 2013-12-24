@@ -9,12 +9,7 @@
   <meta name="author" content="Rain">
 
   
-  <meta name="description" content="Chuck Jazdzewski：Borland公司首席架构师
-* Never stop learning
-* Communication is critical
-* Under promise, over deliver
-* I was wrong
-* If it is not tested &hellip;">
+  <meta name="description" content="git 是一个版本控制系统，最先由大牛 Linux Torvalds开发。 * 速度快 * 设计简单 * 对非线性开发模式的强力支持 * 完全分布式 git 和其他版本控制系统的主要差别在于git只关心文件数据的整体是否发生变化，而大多数的其他系统则只关心内容的具体差异。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -23,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rain2pku.github.com/">
+  <link rel="canonical" href="http://rain2pku.github.com/blog/page/2/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +79,7 @@
   <header>
     
       <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/12/11/ju-ren-de-jian-bang/">巨人的肩膀</a></h1>
+        <h1 class="entry-title"><a href="/blog/2012/11/15/git-xue-xi-bi-ji/">Git 学习笔记</a></h1>
       
     
     
@@ -101,21 +96,34 @@
   
 
 
-<time datetime="2012-12-11T00:23:00+08:00" pubdate data-updated="true">2012-12-11</time>
+<time datetime="2012-11-15T17:07:00+08:00" pubdate data-updated="true">2012-11-15</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Chuck Jazdzewski：Borland公司首席架构师
-* Never stop learning
-* Communication is critical
-* Under promise, over deliver
-* I was wrong
-* If it is not tested it doesn&#8217;t work
-* Programming isn&#8217;t your job, shipping is
-总结为“做个靠谱的程序员”</p>
+  <div class="entry-content"><p>git 是一个版本控制系统，最先由大牛 Linux Torvalds开发。
+   * 速度快
+   * 设计简单
+   * 对非线性开发模式的强力支持
+   * 完全分布式</p>
+
+<p>git 和其他版本控制系统的主要差别在于git只关心文件数据的整体是否发生变化，而大多数的其他系统则只关心内容的具体差异。即git不保存文件变化的前后差异，如果文件发生变化则再次保存这个变化的文件。每个文件都保存一个索引来唯一标识这个文件，当这个文件发生变化，则这个文件生成的索引值也会发生变化，如果文件没有变化则索引也不会发生变化。这个索引值可以理解为对这个文件加密后生成的一个128位的整数。所以每次commit的时候与上次相比文件发生变化则产生一个新的索引值并保存这个文件，如果没有发生变化，则只是用原来的索引值来指向原来的文件。</p>
+
+<p>git有三个状态：
+   * staged 暂存区，即git把文件加到这个目录，然后准备更新到git仓库
+   * working 工作目录， 当前对文件进行增删修改的目录，或者从git仓库clone到的目录。一个文件完善之后就加到staged目录
+   * git仓库，把文件从暂存区commit到的地方。</p>
+
+<p>注意如果你的git目录是从其他远程地方clone过来，你的git仓库和其他地方的 的git仓库地位是</p>
+
+<h2>git创建仓库</h2>
+
+<ul>
+<li> git clone [url] 从其他的地方拷贝项目</li>
+</ul>
+
 </div>
   
   
@@ -129,7 +137,7 @@
   <header>
     
       <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
-        <h1 class="entry-title"><a href="/blog/2012/12/06/wo-de-jia/">我的家</a></h1>
+        <h1 class="entry-title"><a href="/blog/2012/11/11/git-bi-ji/">Git 笔记</a></h1>
       
     
     
@@ -146,21 +154,24 @@
   
 
 
-<time datetime="2012-12-06T10:02:00+08:00" pubdate data-updated="true">2012-12-06</time>
+<time datetime="2012-11-11T14:58:00+08:00" pubdate data-updated="true">2012-11-11</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>对于mac我需要的软件有：
-* XBMC （用于看电影）
-* evernote （用于做笔记）
-* dropbox  （用于云存储）
-* sogou输入法
-* xcode
-* emacs
-*</p>
+  <div class="entry-content"><p>git 建仓库
+git 查看diff
+git clone
+git pull
+git fetch
+git push
+git merge
+git branch
+git remote
+git commit
+git 删除</p>
 </div>
   
   
@@ -170,9 +181,11 @@
   
   <div class="pagination">
     
-      <a class="prev" href="/blog/page/2/">&larr; 旧文</a>
+      <a class="prev" href="/blog/page/3/">&larr; 旧文</a>
     
     <a href="/blog/archives">文章存档</a>
+    
+    <a class="next" href="/">新作 &rarr;</a>
     
   </div>
 </div>

@@ -4,7 +4,7 @@
   <title><![CDATA[]]></title>
   <link href="http://rain2pku.github.com/atom.xml" rel="self"/>
   <link href="http://rain2pku.github.com/"/>
-  <updated>2012-11-06T17:27:46+08:00</updated>
+  <updated>2013-12-24T15:56:31+08:00</updated>
   <id>http://rain2pku.github.com/</id>
   <author>
     <name><![CDATA[Rain]]></name>
@@ -14,76 +14,106 @@
 
   
   <entry>
-    <title type="html"><![CDATA[test]]></title>
-    <link href="http://rain2pku.github.com/blog/2012/11/03/test/"/>
-    <updated>2012-11-03T17:54:00+08:00</updated>
-    <id>http://rain2pku.github.com/blog/2012/11/03/test</id>
-    <content type="html"><![CDATA[<p>Wordpress实在是冗余, 速度慢, 非静态, 依赖数据库, 迁移成本高… 但是还是有很多人用，其实里面有很多一部分人是苦于没有合适的替代品, 只能忍受臃肿的wordpress了，今天我给大家推荐一款轻便的Octopress.</p>
-
-<p>Octopress是一个基于Jekyll的静态博客生成系统</p>
-
-<p>Octopress的优点</p>
-
-<p>纯静态: 最终发布的只有HTML, Javascript和CSS</p>
-
-<!-- more -->
-
-
-<p>Markdown: 使用Markdown作为源文件语言, 易写易读</p>
-
-<p>搭建方便: 简洁的Ruby框架, 操作十分简单方便</p>
-
-<p>迁移成本低: 因为是静态网页, 对主机要求低, 且迁移方便</p>
-
-<p>版本控制友好: 整个项目和文章源代码都是纯文本(图片等除外), 方便版本控制</p>
-
-<p>如何搭建Octopress和wordpress迁移到Octopress</p>
-
-<p>搭建请参考Octopress Documentation http://octopress.org/docs/</p>
-
-<p>迁移请参考Jekyll的wiki  https://github.com/mojombo/jekyll/wiki/blog-migrationsWordpress实在是冗余, 速度慢, 非静态, 依赖数据库, 迁移成本高… 但是还是有很多人用，其实里面有很多一部分人是苦于没有合适的替代品, 只能忍受臃肿的wordpress了，今天我给大家推荐一款轻便的Octopress.</p>
-
-<p>Octopress是一个基于Jekyll的静态博客生成系统</p>
-
-<p>Octopress的优点</p>
-
-<p>纯静态: 最终发布的只有HTML, Javascript和CSS</p>
-
-<p>Markdown: 使用Markdown作为源文件语言, 易写易读</p>
-
-<p>搭建方便: 简洁的Ruby框架, 操作十分简单方便</p>
-
-<p>迁移成本低: 因为是静态网页, 对主机要求低, 且迁移方便</p>
-
-<p>版本控制友好: 整个项目和文章源代码都是纯文本(图片等除外), 方便版本控制</p>
-
-<p>如何搭建Octopress和wordpress迁移到Octopress</p>
-
-<p>搭建请参考Octopress Documentation http://octopress.org/docs/</p>
-
-<p>迁移请参考Jekyll的wiki  https://github.com/mojombo/jekyll/wiki/blog-migrations</p>
+    <title type="html"><![CDATA[巨人的肩膀]]></title>
+    <link href="http://rain2pku.github.com/blog/2012/12/11/ju-ren-de-jian-bang/"/>
+    <updated>2012-12-11T00:23:00+08:00</updated>
+    <id>http://rain2pku.github.com/blog/2012/12/11/ju-ren-de-jian-bang</id>
+    <content type="html"><![CDATA[<p>Chuck Jazdzewski：Borland公司首席架构师
+* Never stop learning
+* Communication is critical
+* Under promise, over deliver
+* I was wrong
+* If it is not tested it doesn&#8217;t work
+* Programming isn&#8217;t your job, shipping is
+总结为“做个靠谱的程序员”</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://rain2pku.github.com/blog/2012/11/02/hello-world/"/>
-    <updated>2012-11-02T19:40:00+08:00</updated>
-    <id>http://rain2pku.github.com/blog/2012/11/02/hello-world</id>
-    <content type="html"><![CDATA[<h2>haha</h2>
+    <title type="html"><![CDATA[我的家]]></title>
+    <link href="http://rain2pku.github.com/blog/2012/12/06/wo-de-jia/"/>
+    <updated>2012-12-06T10:02:00+08:00</updated>
+    <id>http://rain2pku.github.com/blog/2012/12/06/wo-de-jia</id>
+    <content type="html"><![CDATA[<p>对于mac我需要的软件有：
+* XBMC （用于看电影）
+* evernote （用于做笔记）
+* dropbox  （用于云存储）
+* sogou输入法
+* xcode
+* emacs
+*</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[git 学习笔记]]></title>
+    <link href="http://rain2pku.github.com/blog/2012/11/15/git-xue-xi-bi-ji/"/>
+    <updated>2012-11-15T17:07:00+08:00</updated>
+    <id>http://rain2pku.github.com/blog/2012/11/15/git-xue-xi-bi-ji</id>
+    <content type="html"><![CDATA[<p>git 是一个版本控制系统，最先由大牛 Linux Torvalds开发。
+   * 速度快
+   * 设计简单
+   * 对非线性开发模式的强力支持
+   * 完全分布式</p>
 
-<blockquote><h2>This is a header.</h2>
+<p>git 和其他版本控制系统的主要差别在于git只关心文件数据的整体是否发生变化，而大多数的其他系统则只关心内容的具体差异。即git不保存文件变化的前后差异，如果文件发生变化则再次保存这个变化的文件。每个文件都保存一个索引来唯一标识这个文件，当这个文件发生变化，则这个文件生成的索引值也会发生变化，如果文件没有变化则索引也不会发生变化。这个索引值可以理解为对这个文件加密后生成的一个128位的整数。所以每次commit的时候与上次相比文件发生变化则产生一个新的索引值并保存这个文件，如果没有发生变化，则只是用原来的索引值来指向原来的文件。</p>
 
-<ol>
-<li>This is the first list item.</li>
-<li>This is the second list item.</li>
-</ol>
+<p>git有三个状态：
+   * staged 暂存区，即git把文件加到这个目录，然后准备更新到git仓库
+   * working 工作目录， 当前对文件进行增删修改的目录，或者从git仓库clone到的目录。一个文件完善之后就加到staged目录
+   * git仓库，把文件从暂存区commit到的地方。</p>
 
+<p>注意如果你的git目录是从其他远程地方clone过来，你的git仓库和其他地方的 的git仓库地位是</p>
 
-<p>Here&#8217;s some example code:</p>
+<h2>git创建仓库</h2>
 
-<pre><code>return shell_exec("echo $input | $markdown_script");
-</code></pre></blockquote>
+<ul>
+<li> git clone [url] 从其他的地方拷贝项目</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[git 笔记]]></title>
+    <link href="http://rain2pku.github.com/blog/2012/11/11/git-bi-ji/"/>
+    <updated>2012-11-11T14:58:00+08:00</updated>
+    <id>http://rain2pku.github.com/blog/2012/11/11/git-bi-ji</id>
+    <content type="html"><![CDATA[<p>git 建仓库
+git 查看diff
+git clone
+git pull
+git fetch
+git push
+git merge
+git branch
+git remote
+git commit
+git 删除</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Road To Octopress]]></title>
+    <link href="http://rain2pku.github.com/blog/2012/11/06/road-to-octopress/"/>
+    <updated>2012-11-06T23:09:00+08:00</updated>
+    <id>http://rain2pku.github.com/blog/2012/11/06/road-to-octopress</id>
+    <content type="html"><![CDATA[<p>想架个博客好久了，经过调研最后还是选择了相对比较流行稳定简单的octopress，当然另外一个非常重要的原因是它可以用github托管，无需自己搞服务器和域名，这对于一个仅仅是想写点东西的我来说，吸引力还是挺大的。</p>
+
+<p>虽说它比较简单，但对于不懂js、css、html、ruby的前端小白来说还是折腾了挺久的，在这里把它记录下来，一方面加深理解，另一方面希望也能为像我这样的人提供点帮助。</p>
+
+<p>虽然octopress的文档写的比较简单，但是折腾这个博客的大部分的问题都能在这里找到答案，所以如果你细心耐心并且用心的看了它的<a href="http://octopress.org/docs/setup/" target="_blank">文档</a>,你也许就不会搜到这里来了。</p>
+
+<p>首先安装git，并且建立一个<a href="https://github.com" target="_blank">github账号</a>（如果你把博客系统搭建在你的服务器上，那么这个账号可以不用），然后在github上创建一个仓库，<style color="red">注意仓库名必须是在你的github账号上扩张的。假如你的github账号为abcd,则你所建的仓库必须为abcd.github.com</style>。</p>
+
+<p>然后在你的终端上的ssh与你的<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">github账号绑定</a></p>
+
+<p>然后安装ruby，建议用<a href="http://octopress.org/docs/setup/rvm/" target="_blank">RVM</a>来安装，方便快捷，后续也不会出什么差错。</p>
+
+<p>然后<a href="http://octopress.org/docs/setup/" target="_blank"安装octopress</a>,在<code>rake install</code>安装完默认主题之后，再<code>rake setup_github_pages</code> 建立github pages，它会提示让输入仓库的url，则如果你的账号是abcd时，你输入： <code>git@github.com:abcd/abcd.github.com</code> 然后再 <code>rake generate &amp;&amp; rake deploy</code>就产生博客页面，延迟几分钟就可以看了&#8230;</p>
+
+<p>接下来就可以 <code>rake new_post["test"]</code>生成<a href="http://octopress.org/docs/blogging/" target="_blank">写博客</a>了。注意生成的文件在 <code>source/_post/</code>目录下。
+goodluck :)</p>
 ]]></content>
   </entry>
   
